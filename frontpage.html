@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Image — Thursday, 19 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body {
+    background: #f6f1e5;
+    color: #16130e;
+    font-family: "Liberation Serif", "DejaVu Serif", Georgia, serif;
+    padding: 26px 44px 18px 44px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sans { font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif; }
+
+  /* ---------- masthead ---------- */
+  .masthead { text-align: center; }
+  .masthead .brand {
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+  }
+  .masthead .tagline {
+    font-size: 17px;
+    font-style: italic;
+    color: #4c463a;
+    margin-top: 5px;
+  }
+  .rule-double { border-top: 4px solid #16130e; border-bottom: 1px solid #16130e; height: 7px; margin-top: 10px; }
+  .dateline {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding: 10px 0 8px 0;
+    border-bottom: 2px solid #16130e;
+    white-space: nowrap;
+  }
+  .dateline .red { color: #b3231b; }
+
+  /* ---------- shared ---------- */
+  .kicker {
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #b3231b;
+  }
+
+  /* ---------- lead ---------- */
+  .lead { text-align: center; padding-top: 11px; }
+  .lead h1 {
+    font-size: 60px;
+    line-height: 1.02;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 6px;
+  }
+  .lead .standfirst {
+    font-size: 22.5px;
+    line-height: 1.32;
+    font-style: italic;
+    max-width: 880px;
+    margin: 9px auto 0 auto;
+  }
+  .podiums {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 12px;
+  }
+  .podium { text-align: center; }
+  .disc {
+    width: 84px; height: 84px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 1px;
+    border: 3px solid #16130e;
+  }
+  .disc.us { background: #2e3a67; }
+  .disc.cn { background: #b3231b; font-size: 19px; }
+  .disc.ru { background: #20507e; font-size: 17px; }
+  .podium .who {
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 6px;
+  }
+  .table-line { border-top: 3px solid #16130e; width: 620px; margin: 8px auto 0 auto; }
+  .lead .caption {
+    font-size: 19px;
+    margin-top: 7px;
+    color: #2c2618;
+  }
+  .lead .caption b { color: #b3231b; }
+
+  /* ---------- two columns ---------- */
+  .cols {
+    display: flex;
+    gap: 0;
+    border-top: 2px solid #16130e;
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+  .col { flex: 1; }
+  .col.left { padding-right: 30px; }
+  .col.right { padding-left: 30px; border-left: 1px solid #8d8471; }
+  .col h2 { font-size: 30px; line-height: 1.08; font-weight: bold; margin-top: 6px; }
+  .col p { font-size: 20px; line-height: 1.3; margin-top: 7px; }
+
+  /* ---------- markets ---------- */
+  .markets {
+    border-top: 2px solid #16130e;
+    margin-top: 12px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .markets .big {
+    font-size: 58px;
+    font-weight: bold;
+    color: #b3231b;
+    white-space: nowrap;
+    line-height: 1;
+  }
+  .markets h2 { font-size: 30px; font-weight: bold; }
+  .markets p { font-size: 20px; line-height: 1.3; margin-top: 3px; }
+
+  /* ---------- ticker ---------- */
+  .ticker {
+    margin-top: auto;
+    background: #16130e;
+    color: #f6f1e5;
+    padding: 11px 20px 12px 20px;
+  }
+  .ticker .t-head {
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #e8b4ae;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .ticker .t-body { font-size: 19.5px; line-height: 1.36; }
+  .ticker .dot { color: #d94f43; font-weight: bold; }
+</style>
+</head>
+<body>
+
+  <div class="masthead">
+    <div class="brand">The World in One Image</div>
+    <div class="tagline">The whole day&rsquo;s news, on a single page</div>
+    <div class="rule-double"></div>
+  </div>
+
+  <div class="dateline">THURSDAY, <span class="red">19 NOVEMBER</span> 2026</div>
+
+  <div class="lead">
+    <div class="kicker">Shenzhen &middot; APEC Summit &middot; The Lead</div>
+    <h1>THREE LEADERS,<br>ONE TABLE</h1>
+    <p class="standfirst">Trump, Xi and Putin meet in Shenzhen and sign a &ldquo;Declaration
+    toward Peace&rdquo; &mdash; no grand bargain, but a pledge that nuclear war
+    must never be fought.</p>
+    <div class="podiums">
+      <div class="podium"><div class="disc us">U.S.</div><div class="who">TRUMP</div></div>
+      <div class="podium"><div class="disc cn">CHINA</div><div class="who">XI JINPING</div></div>
+      <div class="podium"><div class="disc ru">RUSSIA</div><div class="who">PUTIN</div></div>
+    </div>
+    <div class="table-line"></div>
+    <p class="caption">A four-point declaration: a nuclear war <b>cannot be won</b> and <b>must never be fought</b>.</p>
+  </div>
+
+  <div class="cols">
+    <div class="col left">
+      <div class="kicker">The Hague &middot; World Court</div>
+      <h2>WORLD COURT: MYANMAR COMMITTED GENOCIDE</h2>
+      <p>The ICJ rules on the Rohingya killings of 2017 &mdash; about 10,000 dead &mdash;
+      in a 9&ndash;6 verdict brought by The Gambia: the first time in the court&rsquo;s
+      80 years a state has been held responsible for genocide. Restitution ordered.</p>
+    </div>
+    <div class="col right">
+      <div class="kicker">Strait of Hormuz</div>
+      <h2>GULF ON FIRE</h2>
+      <p>US strikes Iran&rsquo;s Qeshm Island; Tehran hits back at Kuwait and Bahrain
+      as fighting intensifies around the strait. The US Senate votes 51&ndash;48
+      against curbing the war.</p>
+    </div>
+  </div>
+
+  <div class="markets">
+    <div class="big">$81B</div>
+    <div>
+      <h2>AI&rsquo;S BIGGEST DEBUT</h2>
+      <p>Anthropic&rsquo;s record IPO &mdash; 980 million shares at $83 &mdash; is the largest
+      AI listing ever. The Nasdaq still falls 2.3%.</p>
+    </div>
+  </div>
+
+  <div class="ticker">
+    <div class="t-head">Also on 19 November</div>
+    <div class="t-body">Israeli forces enter central Gaza despite the ceasefire <span class="dot">&bull;</span>
+    Russian strikes kill at least five in Ukraine <span class="dot">&bull;</span>
+    EU proposes a &euro;45 billion loan for Ukraine <span class="dot">&bull;</span>
+    Denmark approves a Greenland&ndash;US Arctic security pact</div>
+  </div>
+
+</body>
+</html>
